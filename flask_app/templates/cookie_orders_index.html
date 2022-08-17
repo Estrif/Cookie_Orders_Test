@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cookie_orders_stylesheet.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cookie Order Table</title>
+</head>
+<body>
+    <h2 id="cookie_orders">Cookie Orders</h2>
+    <a href="/new_order" id="new_order_button">+ New Order</a>
+    <table class="cookie_table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Cookie</th>
+                <th>Boxes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+                <tr>
+                    <td>{{order.name}}</td>
+                    <td>{{order.type}}</td>
+                    <td>{{order.box_count}}</td>
+                    <td><a href="/edit_order/{{order.order_id}}">Edit</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

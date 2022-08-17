@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cookie_orders_stylesheet.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Create Order</title>
+</head>
+<body>
+    <h2 id="new_order">New Order</h2>
+    <a href="/" id="back">Back to purchases</a>
+    <form action="/create_order" method="post" id="new_order_form">
+        <label for="name" id="users_name">Name:</label>
+        <input name="name" type="text" id="name_text">
+        <label for="type" id="cookie_type">Cookie Type:</label>
+        <input name="type" type="text" id="cookie_text">
+        <label for="box_count" id="boxes">Number of boxes:</label>
+        <input name="box_count" type="number" id="box_text">
+        <input type="submit" value="Create">
+    </form>
+</body>
+</html>

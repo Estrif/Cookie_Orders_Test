@@ -1,0 +1,83 @@
+#cookie_orders {
+    margin-left: 25%;
+}
+
+#new_order_button {
+    margin-left: 75%;
+}
+
+.error {
+    color: red;
+}
+
+.cookie_table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.cookie_table td, .cookie_table th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: whitesmoke;
+    padding: 8px;
+}
+
+.cookie_table tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+.cookie_table tr:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+.cookie_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: steelblue;
+    color: white;
+}
+
+#new_order_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+#new_order {
+    margin-left: 44.5%;
+}
+
+#back {
+    margin-left: 55%;
+}
+
+#update_order {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 25%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-left: 20px;
+    background-color: steelblue;
+    border-radius: 5px;
+}
+
+#back_button {
+    margin-left: 55%
+}
